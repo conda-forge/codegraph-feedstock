@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.0"
+  version: "1.6.2"
 
 package:
   name: codegraph
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/colbymchenry/codegraph/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 9b264c584395e69595d0b8c602a7f5c65a19d16a26673953721829f32cfda119
+  sha256: 10bbcceaba46be5d37324e94427684a6d33dcbb592c35fbe4d387c2a14a36ff9
 
 build:
   number: 0
