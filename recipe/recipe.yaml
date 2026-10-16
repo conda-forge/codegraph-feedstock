@@ -14,11 +14,11 @@ source:
 
 build:
   number: 0
-  # Upstream issue #81: Node 25+ V8 turboshaft WASM JIT breaks codegraph at
-  # startup. nodejs is a pinned variant key, so skip the variants we cannot use
-  # rather than letting them fail to solve against the host bound below.
-  # skip:
-  #   - match(nodejs, ">=25")
+  # Upstream issue #81: Node >=25 crashes codegraph (V8 turboshaft bug),
+  # so skip those pinned nodejs variants.
+  # Reference: https://github.com/conda-forge/codegraph-feedstock/pull/6#issuecomment-6211429111.
+  skip:
+    - match(nodejs, ">=25")
 
 requirements:
   build:
