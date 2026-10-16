@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.1"
+  version: "1.6.2"
 
 package:
   name: codegraph
@@ -10,13 +10,13 @@ package:
 
 source:
   url: https://github.com/colbymchenry/codegraph/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 822c5a6f438af1e9551332ef19380b47f40f012e2fe3bcffbab0df607590b550
+  sha256: 10bbcceaba46be5d37324e94427684a6d33dcbb592c35fbe4d387c2a14a36ff9
 
 build:
   number: 0
-  # Upstream issue #81: Node 25+ V8 turboshaft WASM JIT breaks codegraph at
-  # startup. nodejs is a pinned variant key, so skip the variants we cannot use
-  # rather than letting them fail to solve against the host bound below.
+  # Upstream issue #81: Node >=25 crashes codegraph (V8 turboshaft bug),
+  # so skip those pinned nodejs variants.
+  # Reference: https://github.com/conda-forge/codegraph-feedstock/pull/6#issuecomment-6211429111.
   skip:
     - match(nodejs, ">=25")
 
