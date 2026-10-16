@@ -46,15 +46,6 @@ description = "Debug codegraph-feedstock with variant linux_64_nodejs24 directly
 [feature.build.tasks."inspect-linux_64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_nodejs24.yaml"
 description = "List contents of codegraph-feedstock packages built for variant linux_64_nodejs24"
-[feature.build.tasks."build-linux_64_nodejs26"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_nodejs26.yaml --target-platform linux-64"
-description = "Build codegraph-feedstock with variant linux_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_nodejs26"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_nodejs26.yaml --target-platform linux-64"
-description = "Debug codegraph-feedstock with variant linux_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_nodejs26"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_nodejs26.yaml"
-description = "List contents of codegraph-feedstock packages built for variant linux_64_nodejs26"
 [feature.build.tasks."build-linux_aarch64_nodejs24"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_nodejs24.yaml --target-platform linux-aarch64"
 description = "Build codegraph-feedstock with variant linux_aarch64_nodejs24 directly (without setup scripts)"
@@ -64,15 +55,6 @@ description = "Debug codegraph-feedstock with variant linux_aarch64_nodejs24 dir
 [feature.build.tasks."inspect-linux_aarch64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_nodejs24.yaml"
 description = "List contents of codegraph-feedstock packages built for variant linux_aarch64_nodejs24"
-[feature.build.tasks."build-linux_aarch64_nodejs26"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_nodejs26.yaml --target-platform linux-aarch64"
-description = "Build codegraph-feedstock with variant linux_aarch64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_nodejs26"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_nodejs26.yaml --target-platform linux-aarch64"
-description = "Debug codegraph-feedstock with variant linux_aarch64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_nodejs26"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_nodejs26.yaml"
-description = "List contents of codegraph-feedstock packages built for variant linux_aarch64_nodejs26"
 [feature.build.tasks."build-osx_64_nodejs24"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_nodejs24.yaml --target-platform osx-64"
 description = "Build codegraph-feedstock with variant osx_64_nodejs24 directly (without setup scripts)"
@@ -82,15 +64,6 @@ description = "Debug codegraph-feedstock with variant osx_64_nodejs24 directly (
 [feature.build.tasks."inspect-osx_64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_nodejs24.yaml"
 description = "List contents of codegraph-feedstock packages built for variant osx_64_nodejs24"
-[feature.build.tasks."build-osx_64_nodejs26"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_nodejs26.yaml --target-platform osx-64"
-description = "Build codegraph-feedstock with variant osx_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_nodejs26"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_nodejs26.yaml --target-platform osx-64"
-description = "Debug codegraph-feedstock with variant osx_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_nodejs26"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_nodejs26.yaml"
-description = "List contents of codegraph-feedstock packages built for variant osx_64_nodejs26"
 [feature.build.tasks."build-osx_arm64_nodejs24"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_nodejs24.yaml --target-platform osx-arm64"
 description = "Build codegraph-feedstock with variant osx_arm64_nodejs24 directly (without setup scripts)"
@@ -100,15 +73,6 @@ description = "Debug codegraph-feedstock with variant osx_arm64_nodejs24 directl
 [feature.build.tasks."inspect-osx_arm64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_nodejs24.yaml"
 description = "List contents of codegraph-feedstock packages built for variant osx_arm64_nodejs24"
-[feature.build.tasks."build-osx_arm64_nodejs26"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_nodejs26.yaml --target-platform osx-arm64"
-description = "Build codegraph-feedstock with variant osx_arm64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_arm64_nodejs26"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_nodejs26.yaml --target-platform osx-arm64"
-description = "Debug codegraph-feedstock with variant osx_arm64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_arm64_nodejs26"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_nodejs26.yaml"
-description = "List contents of codegraph-feedstock packages built for variant osx_arm64_nodejs26"
 [feature.build.tasks."build-win_64_nodejs24"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_nodejs24.yaml --target-platform win-64"
 description = "Build codegraph-feedstock with variant win_64_nodejs24 directly (without setup scripts)"
@@ -118,15 +82,6 @@ description = "Debug codegraph-feedstock with variant win_64_nodejs24 directly (
 [feature.build.tasks."inspect-win_64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_nodejs24.yaml"
 description = "List contents of codegraph-feedstock packages built for variant win_64_nodejs24"
-[feature.build.tasks."build-win_64_nodejs26"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_nodejs26.yaml --target-platform win-64"
-description = "Build codegraph-feedstock with variant win_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_nodejs26"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_nodejs26.yaml --target-platform win-64"
-description = "Debug codegraph-feedstock with variant win_64_nodejs26 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_nodejs26"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_nodejs26.yaml"
-description = "List contents of codegraph-feedstock packages built for variant win_64_nodejs26"
 
 [environments]
 build = ["build"]
