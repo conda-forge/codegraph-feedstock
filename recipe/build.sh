@@ -1,5 +1,12 @@
 set -euxo pipefail
 
+# Upstream uses npm workspaces; pnpm ignores package.json's "workspaces"
+# field, so without this it skips installing ui/'s deps (vite).
+cat > pnpm-workspace.yaml <<'EOF'
+packages:
+  - "ui"
+EOF
+
 pnpm install --ignore-scripts
 npm run build
 export CFLAGS="${CFLAGS:-} -D_BSD_SOURCE -D_DEFAULT_SOURCE"

@@ -1,3 +1,11 @@
+rem Upstream uses npm workspaces; pnpm ignores package.json's "workspaces"
+rem field, so without this it skips installing ui/'s deps (vite).
+(
+    echo packages:
+    echo   - "ui"
+) > pnpm-workspace.yaml
+if %ERRORLEVEL% neq 0 exit /b 1
+
 call pnpm install --ignore-scripts
 if %ERRORLEVEL% neq 0 exit /b 1
 call npm run build
